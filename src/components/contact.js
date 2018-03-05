@@ -37,7 +37,7 @@ export default class Contact extends React.Component {
     componentDidUpdate(prevProps, prevState){
         let currentStateContactData = JSON.stringify(this.state.contactData);
         if(JSON.stringify(prevState.contactData) != currentStateContactData){
-            localStorage.setItem("contactData", currentStateContactData); 
+            localStorage.setItem("contactData", currentStateContactData);
         }
     }
 
